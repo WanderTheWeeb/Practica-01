@@ -13,8 +13,7 @@ Sigue estos pasos para configurar el entorno de trabajo:
     ```bash
     git remote add upstream <url-del-repositorio-principal>
     git remote add origin <url-del-repositorio-equipo>
-    ```
-    2. El equipo solo tendra acceso al repositorio del equipo ` git remote add team <url-del-repositorio-equipo> `
+    ```    
    
 3. Crea una nueva rama para trabajar en tu tarea específica:
    
@@ -25,13 +24,13 @@ Sigue estos pasos para configurar el entorno de trabajo:
 git add .
 git commit -m "Mensaje descriptivo de los cambios realizados"
 ```
-6. Sincroniza tu rama con el repositorio principal:
+1. Sincroniza tu rama con el repositorio principal:
 ` git pull origin main `
 
-7. Sube tus cambios a tu repositorio de equipo: `git push origin main`
-8. Primero, asegúrate de estar en la rama principal: `git checkout main` o `git switch main`
-9.  Luego, obtén los últimos cambios del repositorio principal: `git pull origin main `
-10.  Finalmente, fusiona la rama del equipo con la rama principal y sube los cambios:
+1. Sube tus cambios a tu repositorio de equipo: `git push origin main`
+2. Primero, asegúrate de estar en la rama principal: `git checkout main` o `git switch main`
+3.  Luego, obtén los últimos cambios del repositorio principal: `git pull origin main `
+4.   Finalmente, fusiona la rama del equipo con la rama principal y sube los cambios:
 ```bash
 git merge origin/nombre-de-la-rama
 git push upstream main
