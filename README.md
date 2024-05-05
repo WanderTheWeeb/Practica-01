@@ -6,20 +6,20 @@ Organiza equipos de 4 o 5integrantes. Cada equipo deberá tener un líder design
 Sigue estos pasos para configurar el entorno de trabajo:
 
 1. EL lider del equipo hara un fork del repositorio principal en GitHub.
-
-2. Cada integrante del equipo debe clonar el repositorio a su computadora local usando el siguiente comando: `git clone <url-repositorio>`
    
-   1. El lider configura dos remotos en tu repositorio local: uno para el repositorio principal y otro para el repositorio del equipo. 
+2. El lider configura dos remotos en tu repositorio local: uno para el repositorio principal y otro para el repositorio del equipo. 
     ```bash
     git remote add upstream <url-del-repositorio-principal>
     git remote add origin <url-del-repositorio-equipo>
     ```    
+3. Cada integrante del equipo debe clonar el repositorio a su computadora local usando el siguiente comando: `git clone <url-repositorio-equipo>`
    
-3. Crea una nueva rama para trabajar en tu tarea específica:
    
-4. Realiza los cambios necesarios en los archivos de la página.
+4. Crea una nueva rama para trabajar en tu tarea específica:
    
-5. Una vez que hayas completado tus cambios, añade los archivos modificados al área de staging y haz un commit:
+5. Realiza los cambios necesarios en los archivos de la página.
+   
+6. Una vez que hayas completado tus cambios, añade los archivos modificados al área de staging y haz un commit:
 ```bash
 git add .
 git commit -m "Mensaje descriptivo de los cambios realizados"
