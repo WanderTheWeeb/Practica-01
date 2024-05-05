@@ -32,10 +32,10 @@ git commit -m "Mensaje descriptivo de los cambios realizados"
 8. Primero, asegúrate de estar en la rama principal: `git checkout main` o `git switch main`
 9.  Luego, obtén los últimos cambios del repositorio principal: `git pull origin main `
 10.  Finalmente, fusiona la rama del equipo con la rama principal y sube los cambios:
-    ```bash
-    git merge team/nombre-de-la-rama
-    git push origin main
-    ```
+```bash
+git merge team/nombre-de-la-rama
+git push origin main
+```
 
 ## Tareas por Realizar
 
