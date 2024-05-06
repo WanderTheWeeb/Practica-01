@@ -1,3 +1,5 @@
+/* CSS */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +7,6 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
-
-
 
 header {
     background-color: #333;
@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,12 +59,17 @@ h1 {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .pelicula img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+
+.pelicula:hover {
+    transform: scale(1.1);
 }
 
 ul {
@@ -89,4 +94,21 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Reglas de medios para hacerlo responsivo */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
