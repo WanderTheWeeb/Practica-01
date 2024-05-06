@@ -18,6 +18,8 @@
                 <li><a href="../galeria/galeria.html">Imágenes</a></li>
             </ul>
         </nav>
+        <button class="toggle-mode-btn" onclick="toggleDarkMode()">Modo Oscuro</button>
+
     </header>
     
     <main>
@@ -47,8 +49,8 @@
             </section>
         </div>      
 
-        <section id="premios-nominacions">
-        <h2>Premios y nominaciones</h2>
+        <section id="premios-nominaciones">
+            <h2>Premios y nominaciones</h2>
             <ul>
                 <li>Óscar: nominado a Mejor Actor por “La La Land” (2017)</li>
                 <li>Globo de Oro: nominado a Mejor Actor - Comedia o Musical por “La La Land” (2017)</li>
@@ -57,7 +59,6 @@
                 <li>Satellite: nominado a Mejor Actor de Reparto por “Barbie” (2023)</li>
             </ul>
         </section>
-        
         
         <section id="curiosidades">
             <h2>Curiosidades</h2>
@@ -78,5 +79,12 @@
     <footer>
         <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
