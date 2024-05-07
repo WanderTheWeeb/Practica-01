@@ -1,4 +1,4 @@
-/* CSS */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -96,7 +96,6 @@ footer {
     padding: 10px 0;
 }
 
-/* Reglas de medios para hacerlo responsivo */
 @media screen and (max-width: 768px) {
     nav ul li {
         margin-right: 10px;
