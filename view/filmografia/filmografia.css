@@ -1,31 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
+    min-height: 100vh;
 }
-
-
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    padding: 10px 0;
 }
 
-nav{
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center; /* Para centrar las opciones de navegación */
 }
 
 nav ul li {
@@ -36,6 +45,12 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    margin: 0 10px; /* Añadido margen para separar los enlaces */
+    transition: color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cambia de color al pasar el mouse */
 }
 
 main {
@@ -86,11 +101,57 @@ li em {
 
 footer {
     background-color: #333;
-    position:static;
-    bottom: 0;
-    left: 0;
-    width: 100;
     color: #fff;
-    text-align: center;
     padding: 10px 0;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 10px; /* Añadido para dar espacio entre el título y el párrafo */
+}
+
+.footer-copyright {
+    font-size: 18px; /* Tamaño de letra aumentado */
+    margin-top: 10px; /* Añadido para separar el texto de derechos de autor del párrafo anterior */
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Cambia de color al pasar el mouse */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .container {
+        width: 100%;
+    }
 }
