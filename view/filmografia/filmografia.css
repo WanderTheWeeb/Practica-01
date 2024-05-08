@@ -4,13 +4,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000;
 }
 
 .dark-mode body, .dark-mode .pelicula{
+    background-color: #e27272;
     background-color: #000;
-    color: #fff;
+    color: #686868;
 }
 
 .grow {
