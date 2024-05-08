@@ -85,3 +85,46 @@ section ul li {
     flex: 1;
     padding-left: 20px;
 }
+
+.resolution{
+    height: 676px;
+    width: 1200px;
+    margin-bottom: 25px;
+
+}
+
+.slider-frame {
+    width: 100%; /* Modificamos el ancho para que ocupe el ancho completo del contenedor */
+    overflow: hidden;
+    position: relative; /* Necesario para el posicionamiento absoluto de las imágenes */
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 1000%; /* Ancho igual al número de imágenes multiplicado por 100% */
+    animation: slide 10s infinite alternate; /* Modificamos la duración de la animación */
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 10%; /* Ancho igual a 100% dividido por el número de imágenes */
+}
+
+.slider-frame img {
+    width: 100%; /* Hacemos que las imágenes ocupen todo el ancho del contenedor */
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+    20% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+    40% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+    60% {margin-left: -300%;}
+    70% {margin-left: -300%;}
+    80% {margin-left: -400%;}
+    90% {margin-left: -400%;}
+    100% {margin-left: -500%;} /* Ajustamos el porcentaje final al ancho total */
+}

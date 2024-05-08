@@ -90,3 +90,39 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.slider-frame {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centramos el carrusel horizontalmente */
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 1000%;
+    animation: slide 40s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 10%;
+}
+
+.slider-frame img {
+    width: 100%; /* Mantenemos el ancho de las imágenes al 100% */
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+    20% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+    40% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+    60% {margin-left: -300%;}
+    70% {margin-left: -300%;}
+    80% {margin-left: -400%;}
+    90% {margin-left: -400%;}
+    100% {margin-left: -500%;}
+}
