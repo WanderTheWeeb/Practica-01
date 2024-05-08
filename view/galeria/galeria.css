@@ -94,16 +94,19 @@ section ul li {
 }
 
 .slider-frame {
-    width: 100%; /* Modificamos el ancho para que ocupe el ancho completo del contenedor */
+    margin: auto;
+    width: 80%; 
     overflow: hidden;
-    position: relative; /* Necesario para el posicionamiento absoluto de las imágenes */
+    position:relative;
+
 }
 
 .slider-frame ul {
     display: flex;
+    align-items: center;
     padding: 0;
-    width: 1000%; /* Ancho igual al número de imágenes multiplicado por 100% */
-    animation: slide 10s infinite alternate; /* Modificamos la duración de la animación */
+    width: 1000%; 
+    animation: slide 40s infinite alternate;
 }
 
 .slider-frame li {
