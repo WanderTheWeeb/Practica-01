@@ -1,3 +1,4 @@
+/* Estilos para el modo light */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,7 +16,7 @@ header {
     justify-content: space-between;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +78,57 @@ section ul li {
     display: flex;
 }
 
-#biografia{
+#biografia {
     flex: 1;
 }
 
 #informacion-personal {
     flex: 1;
     padding-left: 20px;
+}
+
+/* Estilos para el modo dark */
+.dark-mode body {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode nav ul li a {
+    color: #333;
+}
+
+.dark-mode section {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-mode section h2 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.dark-mode section ul li {
+    color: #fff;
+}
+
+/* Estilo para el botón */
+.toggle-mode-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón en modo dark */
+.dark-mode .toggle-mode-btn {
+    background-color: #fff;
+    color: #333;
 }
