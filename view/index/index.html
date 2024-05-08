@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Gosling</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     
@@ -34,6 +35,7 @@
             </section>
     
             <section id="informacion-presonal">
+                <img src="./Ryan.jpeg" alt="Descripción de la imagen" class="imagenPortada">
                 <h2>Información personal</h2>
                 <ul>
                     <li>Nombre: Ryan Thomas Gosling</li>
@@ -49,8 +51,8 @@
             </section>
         </div>      
 
-        <section id="premios-nominaciones">
-            <h2>Premios y nominaciones</h2>
+        <section id="premios-nominacions">
+            <h2 onclick="toggleSection('premios-nominacions')">Premios y nominaciones</h2>
             <ul>
                 <li>Óscar: nominado a Mejor Actor por “La La Land” (2017)</li>
                 <li>Globo de Oro: nominado a Mejor Actor - Comedia o Musical por “La La Land” (2017)</li>
@@ -61,7 +63,7 @@
         </section>
         
         <section id="curiosidades">
-            <h2>Curiosidades</h2>
+            <h2 onclick="toggleSection('curiosidades')">Curiosidades</h2>
             <ul>
                 <li>Es vegetariano desde los 15 años.</li>
                 <li>Es un gran fanático de la música de Britney Spears.</li>
