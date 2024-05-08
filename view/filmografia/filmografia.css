@@ -69,7 +69,7 @@ h1 {
 }
 
 .pelicula:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 ul {
@@ -111,3 +111,14 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+
+.pelicula .trama {
+    display: none; /* Ocultar la trama por defecto */
+    font-size: 14px;
+}
+
+.pelicula:hover .trama {
+    display: block; /* Mostrar la trama al hacer hover */
+}
+
