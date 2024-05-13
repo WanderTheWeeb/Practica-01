@@ -6,7 +6,20 @@ body {
     background-color: #f8f8f8;
     color: #333;
 }
+/* Estilos adicionales para el modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
 
+.dark-mode a {
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #fff;
+    color: #333;
+}
 header {
     background-color: #333;
     color: #fff;
