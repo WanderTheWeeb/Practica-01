@@ -1,10 +1,8 @@
-/* Estilos para el modo light */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
 }
 
 header {
@@ -14,12 +12,6 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul {
@@ -70,13 +62,7 @@ section ul li {
     margin-bottom: 10px;
 }
 
-#informacion {
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-bottom: 50px;
-    border: 1px solid #ccc;
-    display: flex;
-}
+
 
 #biografia {
     flex: 1;
@@ -85,21 +71,57 @@ section ul li {
 #informacion-personal {
     flex: 1;
     padding-left: 20px;
+    background-color: #333;
 }
 
-/* Estilos para el modo dark */
-.dark-mode body {
+/* Estilos para el modo claro */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode header {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode nav ul li a {
+    color: #333;
+}
+
+.light-mode section {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.light-mode section h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.light-mode section ul li {
+    color: #333;
+}
+.light-mode #informacion {
+    background-color: #ccc; /* Cambia el color de fondo para el modo oscuro */
+    color: #333;
+    border: 1px solid #fff;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
     background-color: #333;
     color: #fff;
 }
 
 .dark-mode header {
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
 }
 
 .dark-mode nav ul li a {
-    color: #333;
+    color: #fff;
 }
 
 .dark-mode section {
@@ -117,18 +139,9 @@ section ul li {
     color: #fff;
 }
 
-/* Estilo para el botón */
-.toggle-mode-btn {
-    background-color: #333;
+.dark-mode #informacion {
+    background-color: #222; /* Cambia el color de fondo para el modo oscuro */
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    border: 1px solid #fff;
 }
 
-/* Estilo para el botón en modo dark */
-.dark-mode .toggle-mode-btn {
-    background-color: #fff;
-    color: #333;
-}
