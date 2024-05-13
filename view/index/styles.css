@@ -1,4 +1,4 @@
-/* Estilos generales */
+¿/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #333;
-    color: #333;
+    color: #fff;
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -35,10 +35,10 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: #333;
+    background-color: #f5f5f5;
     padding: 20px;
     margin-bottom: 50px;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
 
 section h2 {
     color: #333;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
@@ -60,14 +60,6 @@ section ul {
 
 section ul li {
     margin-bottom: 10px;
-}
-
-.imagenPortada{
-    width: 200px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
