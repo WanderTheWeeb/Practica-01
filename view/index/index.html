@@ -7,25 +7,6 @@
     <title>Ryan Gosling</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts.js"></script>
-    <style>
-        /* Estilos para el recuadro */
-        .box {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .box a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
@@ -41,7 +22,6 @@
                     <li><a href="../margot_robbie/margot.html">Biografía de Margot Robbie</a></li>
                 </ul>
             </nav>
-            <button class="toggle-mode-btn" onclick="toggleDarkMode()">Modo Oscuro</button>
         </div>
     </header>
 
@@ -59,19 +39,23 @@
 
             <section id="informacion-presonal">
                 <div class="personal-info-container">
-                    <img src="./Ryan.jpeg" alt="Descripción de la imagen" class="imagenPortada">
-                    <h2>Información personal</h2>
-                    <ul>
-                        <li>Nombre: Ryan Thomas Gosling</li>
-                        <li>Fecha de nacimiento: 12 de noviembre de 1980</li>
-                        <li>Lugar de nacimiento: London, Ontario, Canadá</li>
-                        <li>Altura: 1.84 m</li>
-                        <li>Color de ojos: Azules</li>
-                        <li>Color de cabello: Rubio</li>
-                        <li>Estado civil: Casado</li>
-                        <li>Cónyuge: Eva Mendes</li>
-                        <li>Hijos: 2</li>
-                    </ul>
+                    <div class="info-container">
+                        <h2>Información personal</h2>
+                        <ul>
+                            <li><strong>Nombre:</strong> Ryan Thomas Gosling</li>
+                            <li><strong>Fecha de nacimiento:</strong> 12 de noviembre de 1980</li>
+                            <li><strong>Lugar de nacimiento:</strong> London, Ontario, Canadá</li>
+                            <li><strong>Altura:</strong> 1.84 m</li>
+                            <li><strong>Color de ojos:</strong> Azules</li>
+                            <li><strong>Color de cabello:</strong> Rubio</li>
+                            <li><strong>Estado civil:</strong> Casado</li>
+                            <li><strong>Cónyuge:</strong> Eva Mendes</li>
+                            <li><strong>Hijos:</strong> 2</li>
+                        </ul>
+                    </div>
+                    <div class="imagen-container">
+                        <img src="./Ryan.jpeg" alt="Descripción de la imagen" class="imagenPortada">
+                    </div>
                 </div>
             </section>
         </div>
@@ -113,11 +97,5 @@
         </div>
     </footer>
 
-    <script>
-        function toggleDarkMode() {
-            var body = document.body;
-            body.classList.toggle("dark-mode");
-        }
-    </script>
 </body>
 </html>
