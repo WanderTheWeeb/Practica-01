@@ -1,17 +1,17 @@
-¿/* Estilos generales */
+/*Estilos para el modo light */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
 }
 
 nav ul {
@@ -27,121 +27,70 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
 }
 
 main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-bottom: 50px;
-    border: 1px solid #ccc;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+h1 {
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-section h2 {
-    color: #333;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+.biografia-container,
+.personal-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-section ul {
-    padding-left: 20px;
+.imagen-container {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 300px;
 }
 
-section ul li {
+.imagenPortada {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+    flex: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
     margin-bottom: 10px;
 }
 
-
-
-#biografia {
-    flex: 1;
+li strong {
+    font-weight: bold;
 }
 
-#informacion-personal {
-    flex: 1;
-    padding-left: 20px;
-    background-color: #333;
-}
-
-/* Estilos para el modo claro */
-.light-mode {
+.curiosidades-container {
     background-color: #fff;
-    color: #333;
-}
-
-.light-mode header {
-    background-color: #fff;
-    color: #333;
-}
-
-.light-mode nav ul li a {
-    color: #333;
-}
-
-.light-mode section {
-    background-color: #f5f5f5;
-    color: #333;
     border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.light-mode section h2 {
-    color: #333;
-    border-bottom: 1px solid #ccc;
+.curiosidades-container h2 {
+    cursor: pointer;
 }
-
-.light-mode section ul li {
-    color: #333;
-}
-.light-mode #informacion {
-    background-color: #ccc; /* Cambia el color de fondo para el modo oscuro */
-    color: #333;
-    border: 1px solid #fff;
-}
-
-/* Estilos para el modo oscuro */
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode header {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode nav ul li a {
-    color: #fff;
-}
-
-.dark-mode section {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.dark-mode section h2 {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-
-.dark-mode section ul li {
-    color: #fff;
-}
-
-.dark-mode #informacion {
-    background-color: #222; /* Cambia el color de fondo para el modo oscuro */
-    color: #fff;
-    border: 1px solid #fff;
-}
-
