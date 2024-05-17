@@ -90,44 +90,39 @@ section ul li {
     height: 676px;
     width: 1200px;
     margin-bottom: 25px;
-
 }
 
-.slider-frame {
-    margin: auto;
-    width: 80%; 
-    overflow: hidden;
-    position:relative;
-
+*{
+    box-sizing: border-box;
 }
 
-.slider-frame ul {
-    display: flex;
-    align-items: center;
+body{
+    margin: 0;
     padding: 0;
-    width: 1000%; 
-    animation: slide 40s infinite alternate;
 }
 
-.slider-frame li {
-    list-style: none;
-    width: 10%; /* Ancho igual a 100% dividido por el número de imágenes */
+img{
+    width: 100%;
 }
 
-.slider-frame img {
-    width: 100%; /* Hacemos que las imágenes ocupen todo el ancho del contenedor */
+.row{
+    display: flex;
+    padding: 5px;
 }
 
-@keyframes slide {
-    0% {margin-left: 0;}
-    10% {margin-left: 0;}
-    20% {margin-left: -100%;}
-    30% {margin-left: -100%;}
-    40% {margin-left: -200%;}
-    50% {margin-left: -200%;}
-    60% {margin-left: -300%;}
-    70% {margin-left: -300%;}
-    80% {margin-left: -400%;}
-    90% {margin-left: -400%;}
-    100% {margin-left: -500%;} /* Ajustamos el porcentaje final al ancho total */
+.column{
+    flex: 25%;
+    padding: 5px;
 }
+
+.column img{
+    margin-top: 5px;
+}
+
+img:hover{
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+
+
+
