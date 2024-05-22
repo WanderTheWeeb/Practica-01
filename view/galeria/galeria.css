@@ -85,3 +85,44 @@ section ul li {
     flex: 1;
     padding-left: 20px;
 }
+
+.resolution{
+    height: 676px;
+    width: 1200px;
+    margin-bottom: 25px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+img:hover{
+    transform: scale(1.3);
+    transition: 1.5s;
+}
+
+
+
