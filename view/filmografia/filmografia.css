@@ -8,10 +8,14 @@ body {
     color: #000;
 }
 
-.dark-mode body, .dark-mode .pelicula{
-    background-color: #e27272;
+body.dark-mode {
     background-color: #000;
-    color: #686868;
+    color: #ffffff;
+}
+
+body.dark-mode .pelicula {
+    background-color: #333;
+    border-color: #fff;
 }
 
 .grow {
@@ -24,7 +28,7 @@ body {
 
 header {
     background-color: #333;
-    color: #000;
+    color: #fff; /* Cambié el color del texto del header a blanco */
     padding: 10px 20px;
     text-align: center;
     display: flex;
