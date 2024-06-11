@@ -2,25 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: #333;
 }
-
-
 
 header {
     background-color: #333;
-    color: #333;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul {
@@ -34,11 +22,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-main {
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.main {
     padding: 20px;
 }
 
@@ -55,38 +48,26 @@ h1 {
 }
 
 .pelicula {
-    background-color: #333;
-    border: 1px solid #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.pelicula:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .pelicula img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-li strong {
+.pelicula h3 {
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
-}
-
-li em {
-    font-style: italic;
-}
-
-footer {
-    background-color: #333;
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
 }
