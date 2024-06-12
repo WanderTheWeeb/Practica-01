@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.dark-mode body, .dark-mode .pelicula{
+    background-color: #e27272;
+    background-color: #000;
+    color: #686868;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+header {
+    background-color: #333;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Para centrar las opciones de navegación */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* Añadido margen para separar los enlaces */
+    transition: color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cambia de color al pasar el mouse */
+}
+
+.main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cartelera {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pelicula {
+    background-color: #f9f9f9;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pelicula img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pelicula:hover {
+    transform: scale(1.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    font-weight: bold;
+}
+
+li em {
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.pelicula {
+  transition: all 0.2s ease-in-out;
+}
+
+.pelicula:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,11 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "Organiza equipos de 4 o 5integrantes. Cada equipo deberá tener un líder designado para realizar la integración de los cambios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
